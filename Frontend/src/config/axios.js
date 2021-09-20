@@ -1,0 +1,15 @@
+/* =========================================================================================
+ File Name: axios.js
+ Description: Nuxt Axios configuration
+ ========================================================================================== */
+module.exports = {
+  credentials: true,
+  debug: process.env.NODE_ENV !== 'production',
+  headers: {
+    common: {
+      Accept: 'application/json, text/plain, */*',
+      'X-Requested-With': 'XMLHttpRequest'
+    }
+  },
+  prefix: '/api/v1/'
+};
