@@ -21,10 +21,10 @@ let store = {};
   resolveStoreModules(require('..\\src\\store\\getters.js'), 'getters.js')
   resolveStoreModules(require('..\\src\\store\\mutations.js'), 'mutations.js')
   resolveStoreModules(require('..\\src\\store\\state.js'), 'state.js')
-  resolveStoreModules(require('..\\src\\store\\productData\\actions.js'), 'productData/actions.js')
-  resolveStoreModules(require('..\\src\\store\\productData\\getters.js'), 'productData/getters.js')
-  resolveStoreModules(require('..\\src\\store\\productData\\mutations.js'), 'productData/mutations.js')
-  resolveStoreModules(require('..\\src\\store\\productData\\state.js'), 'productData/state.js')
+  resolveStoreModules(require('..\\src\\store\\product\\actions.js'), 'product/actions.js')
+  resolveStoreModules(require('..\\src\\store\\product\\getters.js'), 'product/getters.js')
+  resolveStoreModules(require('..\\src\\store\\product\\mutations.js'), 'product/mutations.js')
+  resolveStoreModules(require('..\\src\\store\\product\\state.js'), 'product/state.js')
 
   // If the environment supports hot reloading...
 
@@ -35,10 +35,10 @@ let store = {};
       '..\\src\\store\\getters.js',
       '..\\src\\store\\mutations.js',
       '..\\src\\store\\state.js',
-      '..\\src\\store\\productData\\actions.js',
-      '..\\src\\store\\productData\\getters.js',
-      '..\\src\\store\\productData\\mutations.js',
-      '..\\src\\store\\productData\\state.js',
+      '..\\src\\store\\product\\actions.js',
+      '..\\src\\store\\product\\getters.js',
+      '..\\src\\store\\product\\mutations.js',
+      '..\\src\\store\\product\\state.js',
     ], () => {
       // Update `root.modules` with the latest definitions.
       updateModules()

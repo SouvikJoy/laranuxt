@@ -81,7 +81,7 @@ export default class Products extends mixins(App) {
   }
 
   get products () {
-    return this.$store.state.productData.products;
+    return this.$store.state.product.all;
   }
 }
 </script>

@@ -469,7 +469,7 @@ export default class Index extends mixins(App) {
   modalOpen = false
 
   get products () {
-    return this.$store.state.productData.products.slice(7);
+    return this.$store.state.product.all;
   }
 
   get services () {
@@ -485,7 +485,7 @@ export default class Index extends mixins(App) {
   }
 
   get productCategories () {
-    return this.$store.state.productData.categories;
+    return this.$store.state.product.categories;
   }
 }
 </script>
